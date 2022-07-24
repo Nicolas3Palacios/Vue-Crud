@@ -24,10 +24,13 @@
                             <a class="nav-link" href="{{route('person.index')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Api">R&M</a>
+                            <a class="nav-link" href="{{route('son.index')}}">Children</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('city.index')}}">City</a>
+                            <a class="nav-link" href="{{route('city.index')}}">Cities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Api">R&M</a>
                         </li>
                     </ul>
                 </div>

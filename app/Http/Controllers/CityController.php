@@ -12,13 +12,13 @@ class CityController extends Controller
     public function index()
     {
         $cities = City::all();
-        return view('city.index',['cities'=>$cities]);
+        return view('city.index', ['cities' => $cities]);
     }
 
     public function edit($id)
     {
         $city = City::find($id);
-        return view('city.edit',['city'=>$city]);
+        return view('city.edit', ['city' => $city]);
     }
 
     public function store(CityRequest $request)

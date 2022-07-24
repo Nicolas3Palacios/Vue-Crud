@@ -1,5 +1,6 @@
 <template>
     <section>
+        <h1>Cities</h1>
         <form-city></form-city>
         <table-city :cities="city_update"></table-city>
     </section>

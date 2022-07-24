@@ -10,6 +10,13 @@ use Illuminate\Http\Request;
 class SonController extends Controller
 {
 
+    public function index()
+    {
+        $children = Son::all();
+        $people = Person::all();
+        return view('children.index',['children'=>$children, 'people'=> $people]);
+    }
+
     public function edit($id)
     {
         $son = Son::find($id);

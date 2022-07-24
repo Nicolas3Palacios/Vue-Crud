@@ -34,6 +34,7 @@ Route::group(['prefix'=>'/city','controller'=>CityController::class],function(){
 
 Route::group(['prefix'=>'/son','controller'=>SonController::class],function(){
     Route::name('son.')->group(function(){
+        Route::get('/index','index')->name('index');
         Route::post('/store','store')->name('store');
         Route::delete('/delete/{id}','delete')->name('delete');
         Route::get('/edit/{id}', 'edit')->name('edit');

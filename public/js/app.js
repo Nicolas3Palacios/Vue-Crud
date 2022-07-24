@@ -3159,7 +3159,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("section", [_c("form-city"), _vm._v(" "), _c("table-city", {
+  return _c("section", [_c("h1", [_vm._v("Cities")]), _vm._v(" "), _c("form-city"), _vm._v(" "), _c("table-city", {
     attrs: {
       cities: _vm.city_update
     }
